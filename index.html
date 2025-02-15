@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeşil Ev Ürünleri</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">EcoHome Essentials</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#products">Ürünler</a></li>
+                    <li><a href="#about">Hakkımızda</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Çevre Dostu Ev Ürünleri</h2>
+            <p>Doğal ve sürdürülebilir yaşam için en iyi ürünler.</p>
+            <a href="#products" class="btn special-btn">Ürünlerimizi Keşfedin</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Ürünlerimiz</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/bambu.jpg" alt="Bambu Diş Fırçası">
+                <h3>Bambu Diş Fırçası</h3>
+                <p>₺124.90</p>
+                <button class="btn">Sepete Ekle</button>
+            </div>
+            <div class="product-item">
+                <img src="images/sabun.jpeg" alt="Doğal Sabun">
+                <h3>Doğal Sabun</h3>
+                <p>₺199.99</p>
+                <button class="btn">Sepete Ekle</button>
+            </div>
+            <div class="product-item">
+                <img src="images/ahsap.jpg" alt="Ahşap Mutfak Gereçleri">
+                <h3>Ahşap Mutfak Gereçleri</h3>
+                <p>₺149.90</p>
+                <button class="btn">Sepete Ekle</button>
+            </div>
+            <div class="product-item">
+                <img src="images/maske.jpg" alt="Doğal Yüz Maskesi">
+                <h3>Doğal Yüz Maskesi</h3>
+                <p>₺499.90</p>
+                <button class="btn">Sepete Ekle</button>
+            </div>
+            <div class="product-item">
+                <img src="images/eko_su.jpg" alt="Eko Dostu Su Şişeleri">
+                <h3>Eko Dostu Su Şişeleri</h3>
+                <p>₺843,99</p>
+                <button class="btn">Sepete Ekle</button>
+            </div>
+            <div class="product-item">
+                <img src="images/pipet.jpg" alt="Bambu Pipetler">
+                <h3>Bambu Pipetler</h3>
+                <p>₺318.00</p>
+                <button class="btn">Sepete Ekle</button>
+            </div>
+            <div class="product-item">
+                <img src="images/temizlik.jpg" alt="Sürdürülebilir Temizlik Ürünleri">
+                <h3>Sürdürülebilir Temizlik Ürünleri</h3>
+                <p>₺945.00</p>
+                <button class="btn">Sepete Ekle</button>
+            </div>
+            <div class="product-item">
+                <img src="images/sabunluk.jpg" alt="Ahşap Sabunluk ve Banyo Ürünleri">
+                <h3>Ahşap Sabunluk ve Banyo Ürünleri</h3>
+                <p>₺409.90</p>
+                <button class="btn">Sepete Ekle</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2>Hakkımızda</h2>
+            <p>EcoHome Essentials olarak, doğaya saygılı ve sürdürülebilir ürünlerle daha bilinçli bir yaşam tarzını destekliyoruz.
+                 Günlük hayatta sıkça kullanılan kişisel bakım, mutfak ve temizlik ürünlerini çevre dostu alternatiflerle sunarak,
+                 hem sizin sağlığınızı hem de gezegenimizi korumayı hedefliyoruz.</p>
+            <p>Ürün yelpazemizde bambu diş fırçalarından doğal sabunlara, 
+               eko dostu su şişelerinden sürdürülebilir temizlik ürünlerine kadar pek çok seçenek bulunuyor. </p>
+            <p>Her biri çevreye zarar vermeyen malzemelerle üretilmiş olup, plastik kullanımını azaltarak doğaya katkı sağlamayı amaçlıyor.
+            <strong>Küçük değişiklikler, büyük farklar yaratır.</strong> Daha yeşil bir gelecek için siz de bu dönüşümün bir parçası olun!🌿</p>
+
+            <div class="about-icons">
+                <div>
+                    <i class="fas fa-seedling"></i>
+                    <p>Doğal Malzemeler</p>
+                </div>
+                <div>
+                    <i class="fas fa-recycle"></i>
+                    <p>Sürdürülebilir Üretim</p>
+                </div>
+                <div>
+                    <i class="fas fa-leaf"></i>
+                    <p>Çevre Dostu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>İletişim</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Adınız" required>
+            <input type="email" placeholder="E-posta" required>
+            <textarea placeholder="Mesajınız" rows="5" required></textarea>
+            <button type="submit" class="btn">Gönder</button>
+        </form>
+    </section>
+     <!-- İletişim bilgileri -->
+     <div class="contact-info">
+        <h3>Bizimle İletişime Geçin</h3>
+        <p>E-posta: <a href="mailto:info@ecohome.com">info@ecohome.com</a></p>
+        <p>Telefon: <a href="tel:+905012345678">+90 501 234 56 78</a></p>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 EcoHome Essentials. Tüm hakları saklıdır.</p>
+        <p>&copy; Web Tasarım Begüm Narmanlı</p>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav');
+    
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('open'); // "open" sınıfı eklenip çıkarılacak
+        });
+    </script>
+    </body>
+    
+</html>
