@@ -147,6 +147,107 @@ button:hover {
     background: linear-gradient(45deg, #66bb6a, #ffffff);
     color: #ffffff; /* Hover durumunda yazı rengini beyaz yapalım */
 }
+#cart-count {
+    font-weight: bold;
+    background: #81C784;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+/* Sepet başlangıçta gizli olmalı */
+.cart-items-container {
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 350px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 80vh;
+    overflow-y: auto; /* Dikey kaydırma */
+    z-index: 999; /* Sepetin en üstte olmasını sağlar */
+}
+
+.cart-items-container.active {
+    display: block;
+}
+
+#cart-btn {
+    /* background-color: #2E7D32; */
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none; /* Çerçeve rengi */
+    border-radius: 10px; /* Kenarları yuvarlatma */
+    transition: all 0.3s ease; /* Geçiş efekti */
+}
+
+#cart-btn:hover {
+    background-color: #81C784;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.cart-item p {
+    flex-grow: 1;
+    font-size: 16px; /* Ürün adının yazı boyutu */
+    font-weight: bold; /* Ürün adını kalın yapmak */
+    position: relative;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between; /* Ürün adı ve fiyatı ayır */
+    align-items: center; /* Dikey hizalama */
+    margin-bottom: 10px; /* Ürünler arasındaki boşluğu azalt */
+    padding: 8px 12px; /* İç boşluğu küçült */
+    background-color: #f9f9f9; /* Arka plan rengi */
+    border-radius: 8px; /* Köşeleri yuvarlat */
+    border: 1px solid #ddd; /* Kenarlık ekle */
+}
+.increase-btn {
+    background-color: #76e67a; /* Yeşil arka plan */
+    color: black; /* Beyaz yazı */
+    padding: 5px 10px; /* Butonun iç boşlukları */
+    border-radius: 5px; /* Kenarları yuvarlak yapmak */
+    border: none; /* Kenar çizgisi kaldırmak */
+    position: relative;
+    top: -35px;
+    left: 70px;
+}
+.decrease-btn {
+    background-color: #76e67a; /* Kırmızı arka plan */
+    color: black; /* Beyaz yazı */
+    padding: 5px 10px; /* Butonun iç boşlukları */
+    border-radius: 5px; /* Kenarları yuvarlak yapmak */
+    border: none; /* Kenar çizgisi kaldırmak */
+    position: relative;
+    top: 35px;
+    left: 45px ;
+}
+.remove-btn {
+    background-color: #76e67a; /* Turuncu arka plan */
+    color: black; /* Beyaz yazı */
+    padding: 8px 16px; /* Butonun iç boşlukları */
+    border-radius: 5px; /* Kenarları yuvarlatmak */
+    border: none; /* Kenar çizgisi kaldırmak */
+    cursor: pointer; /* İmleci göster */
+}
+
+.remove-btn:hover {
+    background-color: #FF6347; /* Hoverda renk değişimi */
+}
+
 /* button end */
 
 /* product start */
