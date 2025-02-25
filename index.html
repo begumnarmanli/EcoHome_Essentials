@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yeşil Ev Ürünleri</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yeşil Ev Ürünleri</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome Kütüphanesi -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">EcoHome Essentials</h1>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#home">Ana Sayfa</a></li>
-                    <li><a href="#products">Ürünler</a></li>
-                    <li><a href="#about">Hakkımızda</a></li>
-                    <li><a href="#contact">İletişim</a></li>
-                </ul>
-                <div class="hamburger" id="hamburger">
-                    &#9776;
-                </div>
-            </nav>
-        </div>
-    </header>
+ <!-- Header -->
+ <header class="header">
+    <div class="container">
+        <h1 class="logo">EcoHome Essentials</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#products">Ürünler</a></li>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#contact">İletişim</a></li>
+                <li class="cart-container">
+                    <a href="#cart" id="cart-btn" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+        </nav>
+    </div>
+</header>
+
+
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -39,57 +51,71 @@
     <section class="products" id="products">
         <h2>Ürünlerimiz</h2>
         <div class="product-grid">
+            <!-- Her bir ürün için ortak yapı -->
             <div class="product-item">
                 <img src="images/bambu.jpg" alt="Bambu Diş Fırçası">
                 <h3>Bambu Diş Fırçası</h3>
                 <p>₺124.90</p>
-                <button class="btn">Sepete Ekle</button>
+                <button class="btn" data-name="Bambu Diş Fırçası" data-price="₺124.90" data-image="images/bambu.jpg">Sepete Ekle</button>
             </div>
+            
             <div class="product-item">
                 <img src="images/sabun.jpeg" alt="Doğal Sabun">
                 <h3>Doğal Sabun</h3>
                 <p>₺199.99</p>
-                <button class="btn">Sepete Ekle</button>
+                <button class="btn" data-name="Doğal Sabun" data-price="₺199.99" data-image="images/sabun.jpeg">Sepete Ekle</button>
             </div>
+            
             <div class="product-item">
                 <img src="images/ahsap.jpg" alt="Ahşap Mutfak Gereçleri">
                 <h3>Ahşap Mutfak Gereçleri</h3>
                 <p>₺149.90</p>
-                <button class="btn">Sepete Ekle</button>
+                <button class="btn" data-name="Ahşap Mutfak Gereçleri" data-price="₺149.90" data-image="images/ahsap.jpg">Sepete Ekle</button>
             </div>
+            
             <div class="product-item">
                 <img src="images/maske.jpg" alt="Doğal Yüz Maskesi">
                 <h3>Doğal Yüz Maskesi</h3>
                 <p>₺499.90</p>
-                <button class="btn">Sepete Ekle</button>
+                <button class="btn" data-name="Doğal Yüz Maskesi" data-price="₺499.90" data-image="images/maske.jpg">Sepete Ekle</button>
             </div>
+            
             <div class="product-item">
                 <img src="images/eko_su.jpg" alt="Eko Dostu Su Şişeleri">
                 <h3>Eko Dostu Su Şişeleri</h3>
-                <p>₺843,99</p>
-                <button class="btn">Sepete Ekle</button>
+                <p>₺843.99</p>
+                <button class="btn" data-name="Eko Dostu Su Şişeleri" data-price="₺843.99" data-image="images/eko_su.jpg">Sepete Ekle</button>
             </div>
+            
             <div class="product-item">
                 <img src="images/pipet.jpg" alt="Bambu Pipetler">
                 <h3>Bambu Pipetler</h3>
                 <p>₺318.00</p>
-                <button class="btn">Sepete Ekle</button>
+                <button class="btn" data-name="Bambu Pipetler" data-price="₺318.00" data-image="images/pipet.jpg">Sepete Ekle</button>
             </div>
+            
             <div class="product-item">
                 <img src="images/temizlik.jpg" alt="Sürdürülebilir Temizlik Ürünleri">
                 <h3>Sürdürülebilir Temizlik Ürünleri</h3>
                 <p>₺945.00</p>
-                <button class="btn">Sepete Ekle</button>
+                <button class="btn" data-name="Sürdürülebilir Temizlik Ürünleri" data-price="₺945.00" data-image="images/temizlik.jpg">Sepete Ekle</button>
             </div>
+            
             <div class="product-item">
                 <img src="images/sabunluk.jpg" alt="Ahşap Sabunluk ve Banyo Ürünleri">
                 <h3>Ahşap Sabunluk ve Banyo Ürünleri</h3>
                 <p>₺409.90</p>
-                <button class="btn">Sepete Ekle</button>
+                <button class="btn" data-name="Ahşap Sabunluk ve Banyo Ürünleri" data-price="₺409.90" data-image="images/sabunluk.jpg">Sepete Ekle</button>
             </div>
         </div>
     </section>
-    
+
+<!-- Sepet içeriği -->
+<div class="cart-items-container">
+    <div class="cart-item">
+        <!-- Sepet öğesi burada listelenecek -->
+    </div>
+</div>
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -142,14 +168,7 @@
         <p>&copy; 2023 EcoHome Essentials. Tüm hakları saklıdır.</p>
         <p>&copy; Web Tasarım Begüm Narmanlı</p>
     </footer>
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const nav = document.querySelector('.nav');
-    
-        hamburger.addEventListener('click', () => {
-            nav.classList.toggle('open'); // "open" sınıfı eklenip çıkarılacak
-        });
-    </script>
+    <script src="e_ticaret.js"></script>
     </body>
     
 </html>
