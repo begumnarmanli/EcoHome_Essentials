@@ -58,7 +58,6 @@ window.onload = function() {
   
       localStorage.setItem('cart', JSON.stringify(cart));
   
-      alert(`${productName} sepete eklendi!`);
       loadCart();
     });
   });
